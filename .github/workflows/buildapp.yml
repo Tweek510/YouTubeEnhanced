@@ -52,7 +52,7 @@ jobs:
       - name: Checkout Main
         uses: actions/checkout@v4.1.6
         with:
-          path: main
+          path: Tweek510-Patch-1
           submodules: recursive
 
       - name: Install Dependencies
@@ -70,7 +70,7 @@ jobs:
         id: SDK
         uses: actions/cache@v4.0.2
         env:
-          cache-name: iOS-16.4-SDK
+          cache-name: iOS-18.4-SDK
         with:
           path: theos/sdks/
           key: ${{ env.cache-name }}
